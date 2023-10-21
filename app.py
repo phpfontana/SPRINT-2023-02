@@ -26,7 +26,8 @@ vector_store = FAISS.from_documents(text_chunks, embeddings)
 llm = CTransformers(
     model="TheBloke/Llama-2-13B-chat-GGUF",
     model_type="llama",
-    max_new_tokens=512
+    max_new_tokens=512,
+    gpu_layers=-1,
 )
 
 # initialize the prompt template
