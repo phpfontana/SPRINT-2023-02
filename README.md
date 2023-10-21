@@ -15,14 +15,16 @@ cd SPRINT-2023-02
 pip install -r requirements.txt
 ```
 
-# Usage
+### Usage
 [(Back to top)](#table-of-contents)
 
-![carbon-2.png](images/usage.png)
+``` bash
+streamlit run app.py
+```
 
 # Demo
 
-![Untitled video - Made with Clipchamp (2).gif](images/demo.gif)
+<img src="images/demo.gif" width="768" height="480"/>
 
 
 # License
