@@ -15,14 +15,15 @@ cd SPRINT-2023-02
 pip install -r requirements.txt
 ```
 
-# Demo
-
-![Untitled video - Made with Clipchamp (2).gif](..%2F..%2F..%2FDownloads%2FUntitled%20video%20-%20Made%20with%20Clipchamp%20%282%29.gif)
-
 # Usage
 [(Back to top)](#table-of-contents)
 
-![carbon-2.png](..%2F..%2F..%2FDownloads%2Fcarbon-2.png)
+![carbon-2.png](images/usage.png)
+
+# Demo
+
+![Untitled video - Made with Clipchamp (2).gif](images/demo.gif)
+
 
 # License
 [(Back to top)](#table-of-contents)
