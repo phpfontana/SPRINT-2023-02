@@ -8,7 +8,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import FAISS
 
 # load pdf files from directory
-loader = DirectoryLoader('src/data/', glob="*.pdf", loader_cls=PyPDFLoader)
+loader = DirectoryLoader('data/', glob="*.pdf", loader_cls=PyPDFLoader)
 documents = loader.load()
 
 # split text into chunks
