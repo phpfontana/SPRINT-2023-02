@@ -1,6 +1,8 @@
-streamlit
-langchain
+streamlit>=1.27.2
+langchain>=0.0.319
 pypdf
 sentence-transformers
 faiss-cpu
 ctransformers
+torch>=2.1.0
+transformers==4.30

@@ -19,12 +19,8 @@ pip install -r requirements.txt
 [(Back to top)](#table-of-contents)
 
 ``` bash
-streamlit run app.py
+streamlit run src/app.py
 ```
-
-# Demo
-
-<img src="images/demo.gif" width="768" height="480"/>
 
 
 # License
