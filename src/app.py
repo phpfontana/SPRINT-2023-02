@@ -11,7 +11,7 @@ import utils
 def main():
     # Loading model and tokenizer
     model_name = "meta-llama/Llama-2-7b-chat-hf"
-    hf_auth_token = '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'
+    hf_auth_token = 'HF_Auth_Token'
 
     @st.cache_resource(show_spinner=False)
     def load_model(model_name, auth_token, cache_dir="./model/"):
