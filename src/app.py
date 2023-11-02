@@ -10,8 +10,8 @@ import utils
 
 def main():
     # Loading model and tokenizer
-    model_name = "meta-llama/Llama-2-7b-chat-hf"
-    hf_auth_token = 'HF_Auth_Token'
+    model_name = "meta-llama/Llama-2-70b-chat-hf"
+    hf_auth_token = '<HF Auth Token>'
 
     @st.cache_resource(show_spinner=False)
     def load_model(model_name, auth_token, cache_dir="./model/"):
@@ -49,7 +49,7 @@ def main():
 
     If you don't know the answer to a question, please don't share false information.
 
-    Only answer questions related to the context and nothing else.
+    Only answer questions related to the Meta Spark Certification and nothing else.
 
     Context: {context}<</SYS>>
     Question: {question}[/INST]
@@ -62,8 +62,8 @@ def main():
         model=model,
         tokenizer=tokenizer,
         task="text-generation",
-        temperature=0.0,
-        max_new_tokens=256,
+        temperature=0.1,
+        max_new_tokens=512,
         repetition_penalty=1.1,
         return_full_text=True,
         max_length=4096
@@ -91,7 +91,7 @@ def main():
     )
 
     # Create centered main title
-    st.title('🦙Llama-2-RAG')
+    st.title('Meta Spark Assistant')
 
     # Initialize session state
     if 'user_query' not in st.session_state:
@@ -104,9 +104,8 @@ def main():
     # info
     st.info("""
         **Tips on Asking Questions:**
-        - Add files to the src/data/ directory to add more documents to the knowledge base.
         - Be specific and clear in your question.
-        - Make sure your question is related to the provided PDF file.
+        - Ask one question at a time.
         """)
 
     # Display example questions with buttons
@@ -115,8 +114,8 @@ def main():
         if st.button("Example 1: What can you do with Meta Spark Studio?"):
             set_query("What can you do with Meta Spark Studio?")
     with col2:
-        if st.button("Example 2: Summarize Tips for designing an effect"):
-            set_query("Summarize Tips for designing an effect")
+        if st.button("Example 2: Tell me about the Meta Spark Certification"):
+            set_query("Tell me about the Meta Spark Certification")
 
     # User input
     user_query = st.text_input('How can I help you?', value=st.session_state['user_query'])
