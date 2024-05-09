@@ -1,9 +1,7 @@
-# SPRINT: Llama2 RAG - 2023/02
+# Sprint-idp - 2023/02
 
-Welcome to the official repository of the SPRINT-IDP undergraduate project, a collaborative effort between our team and Meta. 
+Welcome to the official repository of the Sprint-idp undergraduate project, a collaborative effort between our team and Meta. 
 Here, we are focused on developing innovative solutions using the Llama2 RAG framework to address complex challenges.
-
-
 
 # Getting Started
 To begin your journey with our project, you will need to clone the repository and navigate to the project directory. 
