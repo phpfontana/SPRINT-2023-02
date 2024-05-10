@@ -7,8 +7,8 @@ Here, we are focused on developing innovative solutions using the Llama2 RAG fra
 To begin your journey with our project, you will need to clone the repository and navigate to the project directory. 
 You can do this by running the following commands in your terminal:
 ``` bash
-git clone https://github.com/phpfontana/SPRINT-2023-02
-cd SPRINT-2023-02
+git clone https://github.com/phpfontana/idp-sprint-2023-02.git
+cd idp-sprint-2023-02
 ```
 
 ### Installation
